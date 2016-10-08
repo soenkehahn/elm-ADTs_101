@@ -1,0 +1,5 @@
+# An introduction to algebraic datatypes in elm
+
+`elm` uses a static type system that relies on so-called algebraic datatypes. These ADTs are a powerful tool to model the shape of your data. This talk gives an introduction into ADTs in `elm` that is targeted at beginners.
+
+The speaker Sönke Hahn is a functional programmer working at Originate here in New York.

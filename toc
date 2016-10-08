@@ -1,0 +1,18 @@
+- strings
+- functions
+- records with one field
+- records with two fields
+- tuples
+- constructors with fields
+- they are all cartesian products
+
+- enumeration (role)
+- sum types with fields
+
+- this is a powerful tool for modeling data
+
+- refactorability
+- safety
+
+- common pattern:
+  constructors with one field that is a record type
