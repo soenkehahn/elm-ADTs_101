@@ -13,51 +13,11 @@ x =
     f alice
 
 
-type User
-    = UserCons
-        { name : String
-        , age : Int
-        , username : String
-        , role : Role
-        }
-    | Anonymous
-
-
-type Role
-    = Admin
-    | User
-
-
-renderRole : String -> Role -> String
-renderRole username role =
-    case role of
-        Admin ->
-            "logged in as " ++ username ++ " (admin)"
-
-        User ->
-            "logged in as " ++ username
-
-
-alice : User
+alice : String
 alice =
-    UserCons
-        { name = "Alice"
-        , age = 42
-        , username = "alice"
-        , role = Admin
-        }
+    "Alice"
 
 
-f : User -> String
+f : String -> String
 f user =
-    case user of
-        UserCons { name, age, username, role } ->
-            name
-                ++ " ("
-                ++ renderRole username role
-                ++ ") is "
-                ++ toString age
-                ++ " years old."
-
-        Anonymous ->
-            "not logged in"
+    "Hi, " ++ user ++ "!"
